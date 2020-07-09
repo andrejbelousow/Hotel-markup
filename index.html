@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel-markup</title>
+    <link rel="stylesheet" href="/slyle/normalize.css">
+    <link rel="stylesheet" href="/slyle/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top-container">
+                <a href="#">
+                    <img class="hotel-logo" src="/img/Content/Logo.png" alt="Логотип сети отелей 'Лагуна'">
+                </a>
+                <a class="hotel-tel" href="tel:+74953225448">
+                    +7 495 22 54 48
+                </a>
+                <a class="hotel-user-account" href="#">
+                    Личный кабинет
+                </a>
+            </div>
+
+            <div class="header-panel-container">
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__list links-list">
+                        <li class="links-list__item nav-item">
+                            <a class="nav-item__link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="links-list__item nav-item">
+                            <a class="nav-item__link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="links-list__item nav-item">
+                            <a class="nav-item__link" href="#">
+                                Преимущества
+                            </a>
+                        </li>
+                        <li class="links-list__item nav-item">
+                            <a class="nav-item__link" href="#">
+                                Размещение
+                            </a>
+                        </li>
+                        <li class="links-list__item nav-item">
+                            <a class="nav-item__link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="links-list__item nav-item">
+                            <a class="nav-item__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Полю поиска я сделал фиксированную длину, чтобы ее размеры соответствовали макету. 
+                     Можно ли сделать как-то иначе? Как будет правильнее?
+                     Для адаптивности ее длина, наверное, не должна быть фиксированной, но в задании адаптивность не учитывается.               
+                -->
+                <input class="header__search-field common-input" type="search" placeholder="Поиск"> 
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container flex-container">
+            <section class="booking">
+                
+                        <h3 class="section-title booking__title">
+                            Быстрая бронь
+                        </h3>
+                        <input class="booking__input-item common-input" type="text" placeholder="Город">
+                        <input class="booking__input-item common-input" type="text" placeholder="Категория номера">
+                        <input class="booking__input-item common-input" type="text" placeholder="Дата заселения">
+                        <input class="booking__input-item common-input" type="text" placeholder="Количество ночей">
+                        <input class="booking__input-item common-input" type="text" placeholder="Количество гостей">
+                        <div class="booking-find-container">
+                            <button class="button booking__search-button" type="submit">
+                                Найти номер
+                            </button>
+                            <span class="booking__offer-count">
+                                <b>9 756</b> предложений доступно
+                            </span>
+                        </div>
+
+            </section>
+
+            <section class="special-offer">
+                <h3 class="section-title special-offer__title">
+                    Спецпредложение
+                </h3>
+
+                <div class="special-offer-container">
+
+                    <div class="special-offer-info-container">
+                        <h1 class="section-title special-offer__main-title">
+                            Номера категории люкс
+                        </h1>
+                        <span class="special-offer__price">
+                            от 5000
+                        </span>
+                        <a class="special-offer__detail" href="#">
+                            Подробнее
+                        </a>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </div>
+    </main>
+</body>
+</html>

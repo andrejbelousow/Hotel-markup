@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Muller';
+    src: url('/fonts/MullerLight.woff2') format('woff2'),
+        url('/fonts/MullerLight.woff') format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('/fonts/MullerRegular.woff2') format('woff2'),
+        url('/fonts/MullerRegular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('/fonts/MullerMedium.woff2') format('woff2'),
+        url('/fonts/MullerMedium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('/fonts/MullerBold.woff2') format('woff2'),
+        url('/fonts/MullerBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Muller', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+
+    background-color: #f1f1f1;
+}
+
+.header {
+    margin-bottom: 22px;
+}
+
+.container {
+    max-width: 1168px;
+    margin: 0 auto;
+}
+
+.section-title {
+    padding-left: 45px;
+
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.common-input {
+    border: none;
+    padding-left: 20px;
+
+    line-height: 1;
+
+    background-color: #ffffff;
+}
+
+.button {
+    border-radius: 12px;
+    border: none;
+
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color: #ffffff;
+
+    background-color: #cc9933;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header-top-container {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    padding-top: 30px;
+    margin-bottom: 28px;
+}
+
+.hotel-logo {
+    max-width: 261px;
+    height: 54px;
+}
+
+.hotel-tel {
+    margin-left: 25px;
+
+    color: #666666;
+    font-size: 22px;
+}
+
+.hotel-user-account {
+    margin-left: auto;
+    padding-left: 18px;
+
+    color: #cc9933;
+
+    background: url("/img/Decorations/private-arrow.png") no-repeat left;
+}
+
+.header-panel-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    border-radius: 12px;
+
+    background-color: #ffffff;
+}
+
+.navigation__list {
+    display: flex;
+    height: 100%;
+}
+
+
+.links-list__item:not(:first-child) {
+    margin-left: 45px;
+}
+
+.nav-item__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    line-height: 1;
+}
+
+.header__search-field {
+    align-self: center;
+    width: 355px;
+    padding-top: 16px ;
+    padding-right: 50px; 
+    padding-bottom:16px;
+    border-radius: 15px;
+
+    font-size: 14px;
+
+    background: url("/img/Decorations/search-icon.png") no-repeat;
+    background-position: 94%;
+    background-color: #f1f1f1;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__title {
+    margin-bottom: 22px;
+}
+
+.booking__input-item {
+    border-radius: 12px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    margin-bottom: 24px;
+    
+    font-size: 16px;
+}
+
+.booking__search-button {
+    padding: 30px 25px;
+
+    font-weight: 700;
+}
+
+.booking__offer-count {
+    margin-left: 30px;
+
+    color: #999999;
+}
+
+.booking__offer-count b {
+    color: #cc9933;
+    font-weight: 400;
+}
+
+.special-offer-container {
+    padding-top: 230px;
+    padding-left: 46px;
+    width: 595px;
+    height: 100%;
+
+    background: url("/img/Content/special-room.jpg") no-repeat;
+}
+
+.special-offer__title {
+    margin-bottom: 22px;
+}
+
+.special-offer__main-title {
+    padding-left: 0;
+
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 58px;
+    color: white;
+}
+
+.special-offer__price {
+    margin-top: 24px;
+    font-size: 35px;
+    line-height: 1;
+    color: rgba(255, 255, 255, .49);
+}
+
+.special-offer__detail {
+    color: white;
+}
+
+.special-offer-info-container {
+    max-width: 62%;
+}
