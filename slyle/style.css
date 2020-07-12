@@ -151,7 +151,6 @@ body {
     height: 100%;
 }
 
-
 .links-list__item:not(:first-child) {
     margin-left: 45px;
 }
@@ -330,5 +329,4 @@ body {
     padding-bottom: 34px; 
 
     color: #666666;
-    
 }
