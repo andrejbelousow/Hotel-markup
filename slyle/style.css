@@ -117,7 +117,7 @@ body {
     background-color: #ffffff;
 }
 
-.header-top-container {
+.header__top {
     display: flex;
     align-items: center;
     padding-right: 10px;
@@ -139,14 +139,11 @@ body {
 
 .hotel-user-account {
     margin-left: auto;
-    padding-left: 18px;
 
     color: #cc9933;
-
-    background: url("/img/Decorations/private-arrow.png") no-repeat left;
 }
 
-.header-panel-container {
+.header__bottom {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -172,8 +169,24 @@ body {
     line-height: 1;
 }
 
-.header__search-field {
+.header__form {
+    position: relative;
+
     align-self: center;
+}
+
+.header__form button {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+
+    border: none;
+
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-search__field {
     width: 355px;
     padding-top: 16px;
     padding-right: 50px;
@@ -182,7 +195,6 @@ body {
 
     font-size: 14px;
 
-    background: url("/img/Decorations/search-icon.png") no-repeat;
     background-position: 94%;
     background-color: #f1f1f1;
 }
@@ -195,6 +207,7 @@ body {
 .booking {
     display: flex;
     flex-direction: column;
+    margin-right: 54px;
     width: 44.5%;
 }
 
@@ -202,7 +215,12 @@ body {
     margin-bottom: 22px;
 }
 
-.booking__input-item {
+.booking__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-search__input-item {
     border-radius: 12px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -219,18 +237,24 @@ body {
 }
 
 .booking__offer-count {
+    display: inline-block;
+    padding-left: 0;
     margin-left: 30px;
 
     color: #999999;
 }
 
-.booking__offer-count b {
+.booking__offer-count span {
     color: #cc9933;
     font-weight: 400;
 }
 
-.special-offer-container {
-    padding-top: 225px;
+.special-offer {
+   width: 51%;
+}
+
+.special-offers {
+    padding-top: 202px;
     padding-left: 46px;
     padding-bottom: 34px;
 
@@ -247,7 +271,7 @@ body {
     max-width: 62%;
 }
 
-.special-offer__main-title {
+.special-offers__title {
     padding-left: 0;
     margin-bottom: 28px;
 
@@ -263,14 +287,23 @@ body {
     color: rgba(255, 255, 255, .49);
 }
 
+.special-offer-link-container {
+    display: inline-flex;
+    align-items: center;
+}
+
 .special-offer__detail {
     margin-left: 42px;
     padding-right: 15px;
 
     color: #cc9933;
 
-    background: url("/img/Decorations/link-arrow.svg") no-repeat right center;
     user-select: none;
+}
+
+.special-offer-link-container i {
+    font-size: 24px;
+    color: #cc9933;
 }
 
 .about {
@@ -310,7 +343,6 @@ body {
 .service-item__title {
     display: inline-block;
     padding-left: 46px;
-    padding-right: 14px;
     margin-top: 32px;
     margin-bottom: 12px;
 
@@ -318,12 +350,18 @@ body {
     font-size: 22px;
     font-weight: 500;
 
-    background: url("/img/Decorations/link-arrow.svg") no-repeat right center;
     transition: padding-right 0.3s;
 }
 
-.service-item__title:hover {
-    padding-right: 42px;
+.service-item__title a {
+    height: 100%;
+}
+
+.service-item__title i {
+    padding-left: 8px;
+    vertical-align: middle;
+    
+    font-size: 26px;
 }
 
 .service-item__description {
