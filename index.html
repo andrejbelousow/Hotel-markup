@@ -21,7 +21,6 @@
                     +7 495 22 54 48
                 </a>
                 <a class="hotel-user-account" href="#">
-                    <i class="fa fa-arrow-circle-right"></i>
                     Личный кабинет
                 </a>
             </div>
@@ -78,15 +77,14 @@
                     Быстрая бронь
                 </h2>
                 <form class="booking__form booking-search" action="booking.php" method="POST">
-                    <!-- На сколько я понял, надо обернуть и все инпуты в form, и инпут с выбором 
-                        города отдельно тоже? -->
-                    <form>
-                        <input class="booking-search__input-item common-input" type="text" placeholder="Город">
-                    </form>
-                    <input class="booking-search__input-item common-input" type="text" placeholder="Категория номера">
-                    <input class="booking-search__input-item common-input" type="date">
-                    <input class="booking-search__input-item common-input" type="text" placeholder="Количество ночей">
-                    <input class="booking-search__input-item common-input" type="text" placeholder="Количество гостей">
+                    <input class="booking-search__input-item common-input" type="text" name="city" placeholder="Город">
+                    <input class="booking-search__input-item common-input" type="text" name="number-category"
+                        placeholder="Категория номера">
+                    <input class="booking-search__input-item common-input" type="date" name="date">
+                    <input class="booking-search__input-item common-input" type="text" name="night-quantity"
+                        placeholder="Количество ночей">
+                    <input class="booking-search__input-item common-input" type="text" name="guests-quantity"
+                        placeholder="Количество гостей">
                     <div class="booking-find-container">
                         <input class="button booking__search-button" type="submit" value="Найти номер">
                         <p class="booking__offer-count">
@@ -94,7 +92,7 @@
                         </p>
                     </div>
                 </form>
-                
+
             </section>
 
             <section class="special-offer">
@@ -110,13 +108,9 @@
                         <span class="special-offer__price">
                             от 5000 р
                         </span>
-                        <div class="special-offer-link-container">
-                            <a class="special-offer__detail" href="#">
-                                Подробнее
-                            </a>
-                            <i class="fa fa-angle-right "></i>
-                        </div>
-                        
+                        <a class="special-offer__detail" href="#">
+                            Подробнее
+                        </a>
                     </div>
                 </article>
 
@@ -199,7 +193,7 @@
         </section>
 
         <section class="features container">
-            
+
             <h2 class="section-title feature__title">
                 Приемущества
             </h2>
@@ -223,8 +217,7 @@
                     </p>
                 </li>
                 <li class="features-list__item features-item block-decor">
-                    <img class="features__pic item-pic" src="/img/Decorations/hotel-key.png"
-                        alt="Персональные номера">
+                    <img class="features__pic item-pic" src="/img/Decorations/hotel-key.png" alt="Персональные номера">
                     <p class="features-item__description">
                         Повседневная практика показывает, что сложившаяся структура организации
                     </p>
@@ -242,8 +235,7 @@
                     </p>
                 </li>
                 <li class="features-list__item features-item block-decor">
-                    <img class="features__pic item-pic" src="/img/Decorations/security-box.png"
-                        alt="Персональный сейф">
+                    <img class="features__pic item-pic" src="/img/Decorations/security-box.png" alt="Персональный сейф">
                     <p class="features-item__description">
                         Повседневная практика показывает, что дальнейшее развитие различных форм
                     </p>
@@ -273,7 +265,7 @@
                                     от
                                 </span>
                                 <span class="placing-item__sum">
-                                    4 698 р
+                                    <strong>4 698 р</strong>
                                 </span>
                                 / ночь
                             </p>
