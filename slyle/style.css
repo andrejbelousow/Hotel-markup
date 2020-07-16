@@ -523,3 +523,74 @@ body {
 
     background: url("/img/Decorations/white-link-arrow.svg") no-repeat right center;
 }
+
+.contacts__datas {
+    padding: 48px 44px 44px 44px;
+}
+
+.info-list-item-container {
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 22px;
+    padding-bottom: 28px;
+}
+
+.info-list-item-container:first-child {
+    padding-top: 0;
+}
+
+.info-list-item-title {
+    max-width: 146px;
+    width: 100%;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 22px;
+    color: #666666;
+}
+
+.info-list__address {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.info-list__number {
+    display: block;
+}
+
+.info-list__number:first-child {
+    margin-bottom: 12px;
+}
+
+.info-list__number,
+.info-list__email a {
+    font-weight: 500;
+    color: #cc9933;
+}
+
+.contacts p {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+    line-height: 24px;
+}
+
+.info-list__email:first-child {
+    margin-top: -4px;
+    margin-bottom: 6px;
+}
+
+.info-list__schedule {
+    font-weight: 500;
+}
+
+.contacts__button {
+    margin-top: 44px;
+    padding: 24px 36px 26px 36px;
+    border: 1px solid #cc9933;
+
+    color: #cc9933;
+    font-weight: 700;
+    
+    background-color: #ffffff;
+}
