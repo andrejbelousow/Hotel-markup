@@ -76,19 +76,23 @@
                 <h2 class="section-title booking__title">
                     Быстрая бронь
                 </h2>
-                <form class="booking__form booking-search" action="booking.php" method="POST">
+                <form class="booking__form booking-search" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on"
+                    method="POST">
                     <input class="booking-search__input-item common-input" type="text" name="city" placeholder="Город">
                     <input class="booking-search__input-item common-input" type="text" name="number-category"
                         placeholder="Категория номера">
                     <input class="booking-search__input-item common-input" type="date" name="date">
-                    <input class="booking-search__input-item common-input" type="text" name="night-quantity"
+                    <input class="booking-search__input-item common-input" type="number" name="night-quantity"
                         placeholder="Количество ночей">
-                    <input class="booking-search__input-item common-input" type="text" name="guests-quantity"
+                    <input class="booking-search__input-item common-input" type="number" name="guests-quantity"
                         placeholder="Количество гостей">
                     <div class="booking-find-container">
                         <input class="button booking__search-button" type="submit" value="Найти номер">
                         <p class="booking__offer-count">
-                            <span>9 756</span> предложений доступно
+                            <span>
+                                9 756
+                            </span> 
+                            предложений доступно
                         </p>
                     </div>
                 </form>
@@ -523,91 +527,91 @@
 
         </section>
 
-        <div class="container">
-
             <section class="contacts">
-                
-                <h2 class="section-title contacts__title">
-                    Контакты
-                </h2>
-                <div class="flex-container">
-                    <div class="contacts__datas block-decor info-list">
-                        <div class="info-list-item-container">
-                            <h3 class="info-list__address-title info-list-item-title">
-                                Адрес
-                            </h3>
-                            <address class="info-list__address">
-                                Москва, улица Юности, дом 5 строение 4, офис 2
-                            </address>
-                        </div>
-                        <div class="info-list-item-container">
-                            <h3 class="info-list__number-title info-list-item-title">
-                                Телефоны
-                            </h3>
-                            <div>
-                                <a href="tel:+74995356434" class="info-list__number">
-                                    +7 (499) 535-64-34
-                                </a>
-                                <a href="tel:+74950050544" class="info-list__number">
-                                    +7 (495) 005-05-44
-                                </a>
-                            </div>
-                        </div>
-                        <div class="info-list-item-container">
-                            <h3 class="info-list__email-title info-list-item-title">
-                                E-mail
-                            </h3>
-                            <div>
-                                <p class="info-list__email">
-                                    <a href="mailto:lg.oona@mail.ru">
-                                        lg.oona@mail.ru
-                                    </a>
-                                    по вопросам бронирования
-                                </p>
-                                <p class="info-list__email">
-                                    <a href="mailto:hotels.ln@mail.ru">
-                                        hotels.ln@mail.ru
-                                    </a>
-                                    по вопросам сотрудничества
-                                </p>
-                            </div>
-                        </div>
-                        <div class="info-list-item-container">
-                            <h3 class="info-list__schedule-title info-list-item-title">
-                                График
-                            </h3>
-                            <p class="info-list__schedule">
-                                Понедельник - пятница, <br> с 10:00 до 19:00
-                            </p>
-                        </div>
-                        <button class="button contacts__button" type="button">
-                            Построить маршрут
-                        </button>
-                    </div>
 
-                    <article class="contact-us">
+                <div class="container flex-container">
+
+                    <section>
+
+                        <h2 class="section-title contacts__title">
+                            Контакты
+                        </h2>
+                            <ul class="contacts__datas block-decor info-list">
+                                <li class="info-list-item-container">
+                                    <h3 class="info-list__address-title info-list-item-title">
+                                        Адрес
+                                    </h3>
+                                    <address class="info-list__address">
+                                        Москва, улица Юности, дом 5 строение 4, офис 2
+                                    </address>
+                                </li>
+                                <li class="info-list-item-container">
+                                    <h3 class="info-list__number-title info-list-item-title">
+                                        Телефоны
+                                    </h3>
+                                    <div>
+                                        <a href="tel:+74995356434" class="info-list__number">
+                                            +7 (499) 535-64-34
+                                        </a>
+                                        <a href="tel:+74950050544" class="info-list__number">
+                                            +7 (495) 005-05-44
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="info-list-item-container">
+                                    <h3 class="info-list__email-title info-list-item-title">
+                                        E-mail
+                                    </h3>
+                                    <div>
+                                        <p class="info-list__email">
+                                            <a href="mailto:lg.oona@mail.ru">
+                                                lg.oona@mail.ru
+                                            </a>
+                                            по вопросам бронирования
+                                        </p>
+                                        <p class="info-list__email">
+                                            <a href="mailto:hotels.ln@mail.ru">
+                                                hotels.ln@mail.ru
+                                            </a>
+                                            по вопросам сотрудничества
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="info-list-item-container">
+                                    <h3 class="info-list__schedule-title info-list-item-title">
+                                        График
+                                    </h3>
+                                    <p class="info-list__schedule">
+                                        Понедельник - пятница, <br> с 10:00 до 19:00
+                                    </p>
+                                </li>
+                                <button class="button contacts__button" type="button">
+                                    Построить маршрут
+                                </button>
+                            </ul>
+
+                    </section>
+                    <section class="contact-us">
 
                         <h2 class="section-title contact-us__title">
                             Напишите нам
                         </h2>
-                        <form class="contact-us__form form" action="https://jsonplaceholder.typicode.com/posts, https://postman-echo.com/post"  autocomplete="on" method="POST">
+                        <form class="contact-us__form form" action="https://jsonplaceholder.typicode.com/posts"
+                            autocomplete="on" method="POST">
                             <input class="common-input form__input" type="text" name="name" placeholder="Имя">
-                            <input class="common-input form__input" type="phone" name="phone" placeholder="+7">
-                            <textarea class="form__textarea" name="message" rows="4" placeholder="Сообщение...">
-                                
-                            </textarea>
+                            <input class="common-input form__input" type="tel" name="phone" placeholder="+7">
+                            <textarea class="form__textarea" name="message" rows="4"
+                                placeholder="Сообщение..."></textarea>
                             <button class="button form__button" type="submit">
                                 Отправить
                             </button>
                         </form>
-                        
-                    </article>
 
+                    </section>
+                        
                 </div>
-                
             </section>
 
-        </div>        
     </main>
 
     <footer class="footer container">
@@ -629,7 +633,7 @@
             <address>
                 11710, улица Юности, дом 5 строение 4, офис 2
             </address>
-            <div>
+            <div class="footer-phone-container">
                 <a href="tel:+74995356434">
                     +7 (499) 535-64-34
                 </a>
@@ -637,11 +641,10 @@
                     +7 (495) 005-05-44
                 </a>
             </div>
-            <div>
+            <div class="footer-email-container">
                 <a href="mailto:lg.oona@mail.ru">
                     lg.oona@mail.ru
-                </a> 
-                <br>
+                </a>
                 <a href="mailto:hotels.ln@mail.ru">
                     hotels.ln@mail.ru
                 </a>
@@ -664,7 +667,7 @@
                 <img src="/img/Content/gplus-icon.png" alt="google+">
             </a>
         </div>
-        
+
     </footer>
 </body>
 
