@@ -606,7 +606,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 68%
+    width: 68%;
+    padding-top: 64px;
 }
 
 .contact-us__title {
@@ -645,7 +646,7 @@ body {
     width: 100%;
 
     color: #999999;
-    
+
     resize: none;
 }
 
@@ -658,9 +659,7 @@ body {
     font-weight: 700;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
+.footer .container {
     margin-top: 22px;
     margin-bottom: 52px;
     padding: 46px 52px;
@@ -668,6 +667,7 @@ body {
 
     background: #333333 url("/img/Decorations/sun-footer.png") no-repeat 80% bottom;
 }
+
 
 .footer-info-container,
 .footer-contact-container,
@@ -690,8 +690,6 @@ body {
 
 p.footer__copy {
     padding: 0;
-    /* Можно ли использовать в некоторых случаях отрицательные значения во внешних отступах?
-    Так здесбь я хотел выровнять по высоте "2012-2020" с "Управляющая компания..." */
     margin-top: -8px;
 }
 
@@ -703,9 +701,20 @@ p.footer__description {
     margin-top: 44px;
 }
 
-.footer-contact-container address {
+.footer-contact-container p {
+    padding: 0;
+    margin: 0;
+
     color: #ffffff;
     line-height: 1;
+}
+
+.footer-contact-container a {
+    width: 44%;
+}
+
+.footer-contact-container p {
+    max-width: 100%;
 }
 
 .footer-phone-container,
@@ -730,6 +739,6 @@ p.footer__description {
     align-items: flex-end;
 }
 
-.footer-social-container a:not(:last-child) {
+.footer-social-container li:not(:last-child) {
     margin-bottom: 22px;
 }

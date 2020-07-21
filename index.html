@@ -76,8 +76,8 @@
                 <h2 class="section-title booking__title">
                     Быстрая бронь
                 </h2>
-                <form class="booking__form booking-search" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on"
-                    method="POST">
+                <form class="booking__form booking-search" action="https://jsonplaceholder.typicode.com/posts"
+                    autocomplete="on" method="POST">
                     <input class="booking-search__input-item common-input" type="text" name="city" placeholder="Город">
                     <input class="booking-search__input-item common-input" type="text" name="number-category"
                         placeholder="Категория номера">
@@ -91,7 +91,7 @@
                         <p class="booking__offer-count">
                             <span>
                                 9 756
-                            </span> 
+                            </span>
                             предложений доступно
                         </p>
                     </div>
@@ -527,145 +527,157 @@
 
         </section>
 
-            <section class="contacts">
+        <section class="contacts">
 
-                <div class="container flex-container">
+            <div class="container flex-container">
 
-                    <section>
+                <section>
 
-                        <h2 class="section-title contacts__title">
-                            Контакты
-                        </h2>
-                            <ul class="contacts__datas block-decor info-list">
-                                <li class="info-list-item-container">
-                                    <h3 class="info-list__address-title info-list-item-title">
-                                        Адрес
-                                    </h3>
-                                    <address class="info-list__address">
-                                        Москва, улица Юности, дом 5 строение 4, офис 2
-                                    </address>
-                                </li>
-                                <li class="info-list-item-container">
-                                    <h3 class="info-list__number-title info-list-item-title">
-                                        Телефоны
-                                    </h3>
-                                    <div>
-                                        <a href="tel:+74995356434" class="info-list__number">
-                                            +7 (499) 535-64-34
+                    <h2 class="section-title contacts__title">
+                        Контакты
+                    </h2>
+                    <div class="contacts__datas block-decor info-list">
+                        <ul>
+                            <li class="info-list-item-container">
+                                <h3 class="info-list__address-title info-list-item-title">
+                                    Адрес
+                                </h3>
+                                <address class="info-list__address">
+                                    Москва, улица Юности, дом 5 строение 4, офис 2
+                                </address>
+                            </li>
+                            <li class="info-list-item-container">
+                                <h3 class="info-list__number-title info-list-item-title">
+                                    Телефоны
+                                </h3>
+                                <div>
+                                    <a href="tel:+74995356434" class="info-list__number">
+                                        +7 (499) 535-64-34
+                                    </a>
+                                    <a href="tel:+74950050544" class="info-list__number">
+                                        +7 (495) 005-05-44
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="info-list-item-container">
+                                <h3 class="info-list__email-title info-list-item-title">
+                                    E-mail
+                                </h3>
+                                <div>
+                                    <p class="info-list__email">
+                                        <a href="mailto:lg.oona@mail.ru">
+                                            lg.oona@mail.ru
                                         </a>
-                                        <a href="tel:+74950050544" class="info-list__number">
-                                            +7 (495) 005-05-44
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="info-list-item-container">
-                                    <h3 class="info-list__email-title info-list-item-title">
-                                        E-mail
-                                    </h3>
-                                    <div>
-                                        <p class="info-list__email">
-                                            <a href="mailto:lg.oona@mail.ru">
-                                                lg.oona@mail.ru
-                                            </a>
-                                            по вопросам бронирования
-                                        </p>
-                                        <p class="info-list__email">
-                                            <a href="mailto:hotels.ln@mail.ru">
-                                                hotels.ln@mail.ru
-                                            </a>
-                                            по вопросам сотрудничества
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="info-list-item-container">
-                                    <h3 class="info-list__schedule-title info-list-item-title">
-                                        График
-                                    </h3>
-                                    <p class="info-list__schedule">
-                                        Понедельник - пятница, <br> с 10:00 до 19:00
+                                        по вопросам бронирования
                                     </p>
-                                </li>
-                                <button class="button contacts__button" type="button">
-                                    Построить маршрут
-                                </button>
-                            </ul>
+                                    <p class="info-list__email">
+                                        <a href="mailto:hotels.ln@mail.ru">
+                                            hotels.ln@mail.ru
+                                        </a>
+                                        по вопросам сотрудничества
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="info-list-item-container">
+                                <h3 class="info-list__schedule-title info-list-item-title">
+                                    График
+                                </h3>
+                                <p class="info-list__schedule">
+                                    Понедельник - пятница, <br> с 10:00 до 19:00
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="button contacts__button" type="button">
+                            Построить маршрут
+                        </button>
+                    </div>
 
-                    </section>
-                    <section class="contact-us">
+                </section>
+                <section class="contact-us">
 
-                        <h2 class="section-title contact-us__title">
-                            Напишите нам
-                        </h2>
-                        <form class="contact-us__form form" action="https://jsonplaceholder.typicode.com/posts"
-                            autocomplete="on" method="POST">
-                            <input class="common-input form__input" type="text" name="name" placeholder="Имя">
-                            <input class="common-input form__input" type="tel" name="phone" placeholder="+7">
-                            <textarea class="form__textarea" name="message" rows="4"
-                                placeholder="Сообщение..."></textarea>
-                            <button class="button form__button" type="submit">
-                                Отправить
-                            </button>
-                        </form>
+                    <h2 class="section-title contact-us__title">
+                        Напишите нам
+                    </h2>
+                    <form class="contact-us__form form" action="https://jsonplaceholder.typicode.com/posts"
+                        autocomplete="on" method="POST">
+                        <input class="common-input form__input" type="text" name="name" placeholder="Имя">
+                        <input class="common-input form__input" type="tel" name="phone" placeholder="+7">
+                        <textarea class="form__textarea" name="message" rows="4" placeholder="Сообщение..."></textarea>
+                        <button class="button form__button" type="submit">
+                            Отправить
+                        </button>
+                    </form>
 
-                    </section>
-                        
-                </div>
-            </section>
+                </section>
+
+            </div>
+        </section>
 
     </main>
 
-    <footer class="footer container">
-
-        <div class="footer-info-container">
-            <p class="footer__copy">
-                &copy; 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
-            </p>
-            <p class="footer__description">
-                Представленная на сайте информация
-                носит справочный характер
-                и не является публичной офертой
-            </p>
-            <a href="#" class="footer__policy">
-                Политика конфиденциальности
-            </a>
-        </div>
-        <div class="footer-contact-container">
-            <address>
-                11710, улица Юности, дом 5 строение 4, офис 2
+    <footer class="footer">
+        <div class="container flex-container">
+            <div class="footer-info-container">
+                <p class="footer__copy">
+                    &copy; 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
+                </p>
+                <p class="footer__description">
+                    Представленная на сайте информация
+                    носит справочный характер
+                    и не является публичной офертой
+                </p>
+                <a href="#" class="footer__policy">
+                    Политика конфиденциальности
+                </a>
+            </div>
+            <address class="footer-contact-container">
+                <p>
+                    11710, улица Юности, дом 5 строение 4, офис 2
+                </p>
+                <div class="footer-phone-container">
+                    <a href="tel:+74995356434">
+                        +7 (499) 535-64-34
+                    </a>
+                    <a href="+74950050544">
+                        +7 (495) 005-05-44
+                    </a>
+                </div>
+                <div class="footer-email-container">
+                    <a href="mailto:lg.oona@mail.ru">
+                        lg.oona@mail.ru
+                    </a>
+                    <a href="mailto:hotels.ln@mail.ru">
+                        hotels.ln@mail.ru
+                    </a>
+                </div>
             </address>
-            <div class="footer-phone-container">
-                <a href="tel:+74995356434">
-                    +7 (499) 535-64-34
-                </a>
-                <a href="+74950050544">
-                    +7 (495) 005-05-44
-                </a>
-            </div>
-            <div class="footer-email-container">
-                <a href="mailto:lg.oona@mail.ru">
-                    lg.oona@mail.ru
-                </a>
-                <a href="mailto:hotels.ln@mail.ru">
-                    hotels.ln@mail.ru
-                </a>
-            </div>
-        </div>
-        <div class="footer-social-container">
-            <a href="#">
-                <img src="/img/Content/tripadv-icon.png" alt="tripadvisor">
-            </a>
-            <a href="#">
-                <img src="/img/Content/tw-icon.png" alt="twitter">
-            </a>
-            <a href="#">
-                <img src="/img/Content/fb-icon.png" alt="facebook">
-            </a>
-            <a href="#">
-                <img src="/img/Content/vk-icon.png" alt="vk">
-            </a>
-            <a href="#">
-                <img src="/img/Content/gplus-icon.png" alt="google+">
-            </a>
+            <ul class="footer-social-container">
+                <li>
+                    <a href="#">
+                        <img src="/img/Content/tripadv-icon.png" alt="tripadvisor">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/img/Content/tw-icon.png" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/img/Content/fb-icon.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/img/Content/vk-icon.png" alt="vk">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/img/Content/gplus-icon.png" alt="google+">
+                    </a>
+                </li>
+            </ul>
         </div>
 
     </footer>
