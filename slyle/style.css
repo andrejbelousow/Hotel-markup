@@ -101,7 +101,7 @@ body {
 
 .button {
     border-radius: 12px;
-    border: none;
+    border: 1px solid #cc9933;
 
     font-size: 16px;
     line-height: 1;
@@ -111,6 +111,13 @@ body {
     background-color: #cc9933;
     cursor: pointer;
     user-select: none;
+    transition: 0.2s;
+}
+
+button:hover {
+    color: white;
+
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, .2);
 }
 
 .item-pic {
@@ -158,6 +165,11 @@ body {
 
     font-family: "FontAwesome";
     color: inherit;
+    transition: 0.2s;
+}
+
+.hotel-user-account:hover:before {
+    transform: translateX(-20px);
 }
 
 .header__bottom {
@@ -248,10 +260,21 @@ body {
 }
 
 .booking__search-button {
+    position: relative;
+
     padding: 30px 25px;
 
     font-weight: 700;
+
+    transition: 0.3s;
 }
+
+/* .booking__search-button:hover {
+    color: white;
+
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, .2);
+} */
+
 
 .booking__offer-count {
     display: inline-block;
@@ -652,7 +675,6 @@ body {
 
 .form__button {
     background-color: #cc9933;
-    border: 1px solid #cc9933;
     width: 100%;
     padding: 22px;
 
