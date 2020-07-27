@@ -114,12 +114,6 @@ body {
     transition: 0.2s;
 }
 
-button:hover {
-    color: white;
-
-    box-shadow: inset 0 0 16px rgba(0, 0, 0, .2);
-}
-
 .item-pic {
     max-width: 100%;
 }
@@ -169,7 +163,9 @@ button:hover {
 }
 
 .hotel-user-account:hover:before {
-    transform: translateX(-20px);
+    /* Вот эта анимация*/
+    transform: translate(-20px);
+    /* left: -26px; */
 }
 
 .header__bottom {
@@ -269,11 +265,11 @@ button:hover {
     transition: 0.3s;
 }
 
-/* .booking__search-button:hover {
+.booking__search-button:hover {
     color: white;
 
     box-shadow: inset 0 0 16px rgba(0, 0, 0, .2);
-} */
+}
 
 
 .booking__offer-count {
@@ -336,15 +332,22 @@ button:hover {
     user-select: none;
 }
 
-.special-offer__detail::after {
+.special-offer__detail:after {
     content: "\f105";
     position: absolute;
     right: 2px;
+    top: -10px;
+    bottom: 0;
 
     font-family: 'FontAwesome';
     font-size: 28px;
     color: inherit;
-    top: -10px;
+
+    transition: 0.3s;
+}
+
+.special-offer__detail:hover:after {
+    transform: translate(20px);
 }
 
 .about {
@@ -382,6 +385,8 @@ button:hover {
 }
 
 .service-item__title {
+    position: relative;
+
     display: inline-block;
     padding-left: 46px;
     margin-top: 32px;
@@ -390,19 +395,29 @@ button:hover {
     color: #cc9933;
     font-size: 22px;
     font-weight: 500;
-
-    transition: padding-right 0.3s;
 }
 
-.service-item__title a {
-    height: 100%;
-}
+.service-item__title:after {
+    position: absolute;
+    top: -4px;
+    right: -22px;
+    bottom: 0;
 
-.service-item__title i {
-    padding-left: 8px;
-    vertical-align: middle;
-
+    content: "\f105";
+    display: block;
+    
+    font-family: "FontAwesome";
     font-size: 28px;
+
+    transition: 0.3s;
+}
+
+.service-item__title:hover:after {
+    transform: translate(20px);
+}
+
+.special-offer__detail:hover:after {
+    transform: translate(20px);
 }
 
 .service-item__description {
@@ -522,6 +537,14 @@ button:hover {
     color: #cc9933;
 
     background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.placing-item__link:hover {
+    color: white;
+
+    background: #cc9933;
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, .2);
 }
 
 .all-places {
@@ -625,6 +648,13 @@ button:hover {
     background-color: #ffffff;
 }
 
+.contacts__button:hover {
+    color: white;
+
+    background-color: #cc9933;
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, .2);
+}
+
 .contact-us {
     display: flex;
     flex-direction: column;
@@ -679,6 +709,12 @@ button:hover {
     padding: 22px;
 
     font-weight: 700;
+}
+
+.form__button:hover {
+    color: white;
+
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, .2);
 }
 
 .footer .container {
