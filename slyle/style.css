@@ -34,6 +34,15 @@
     font-style: normal;
 }
 
+:root {
+    --main-text-color: #333333;
+    --second-text-color: #666666;
+    --main-link-color: #cc9933;
+    --button-text-color: white;
+    --button-border-color: #cc9933;
+    --background-color: #f1f1f1;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -601,7 +610,7 @@ body {
 .all-places__link:after {
     content: "\f105";
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     right: -18px;
 
     display: block;
