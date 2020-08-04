@@ -43,6 +43,7 @@
     --button-background-color: #cc9933;
     --button-hovered-background: #cc9933;
     --background-color: #f1f1f1;
+    --white-background: #ffffff;
 }
 
 * {
@@ -63,7 +64,7 @@ a {
 
 p {
     padding-left: 45px;
-    max-width: 88%;
+    /* max-width: 88%; */
 
     line-height: 32px;
 }
@@ -85,11 +86,6 @@ body {
 
 .header {
     margin-bottom: 22px;
-}
-
-.container {
-    max-width: 1168px;
-    margin: 0 auto;
 }
 
 .section-title {
@@ -264,8 +260,9 @@ body {
 .booking {
     display: flex;
     flex-direction: column;
-    margin-right: 54px;
+    /* margin-right: 54px; */
     width: 44.5%;
+    padding-right: 18px;
 }
 
 .booking__title {
@@ -315,17 +312,18 @@ body {
 }
 
 .special-offer {
-    width: 51%;
+    width: 55.5%;
+    padding-left: 18px;
 }
 
 .special-offers {
     padding-top: 202px;
     padding-left: 46px;
     padding-bottom: 34px;
-
-    width: 595px;
+    border-radius: 12px;
 
     background: url("/img/Content/special-room.png") no-repeat;
+    background-size: cover;
 }
 
 .special-offer__title {
@@ -409,11 +407,18 @@ body {
 
 .services-list__item {
     margin-bottom: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: none;
     /* width: 48.9%; */
 }
 
-.services-list__item:nth-child(odd) {
-    /* margin-right: 24px; */
+.service-item-content__container {
+    margin-top: -5px;
+    width: 100%;
+
+    background-color: var(--white-background);
+    border-radius: 0 0 12px 12px;
 }
 
 .service-item__title {
@@ -455,6 +460,7 @@ body {
 .service-item__description {
     margin: 0;
     padding-bottom: 34px;
+    max-width: 80%;
 
     color: var(--second-text-color);
 }
@@ -468,16 +474,22 @@ body {
     flex-wrap: wrap;
 }
 
-.features-list__item {
-    width: 23.5%;
-    margin-bottom: 24px;
-    padding-left: 45px;
+.features-item__container {
     padding-top: 45px;
     padding-bottom: 28px;
+    padding-left: 45px;
+    border-radius: 12px;
+
+    background-color: var(--white-background);
 }
 
-.features-list__item:not(:nth-child(4n + 4)) {
-    margin-right: 22px;
+.features-list__item {
+    padding-left: 11px;
+    padding-right: 11px;
+    /* width: 23.5%; */
+    margin-bottom: 24px;
+
+    border-radius: 12px;
 }
 
 .features__pic {
@@ -504,22 +516,24 @@ body {
 }
 
 .placing-blocks__item {
-    width: 32%;
+    /* width: 32%; */
     border-radius: 12px;
     margin-bottom: 22px;
-    padding-bottom: 34px;
+    padding-left: 12px;
+    padding-right: 12px;
 
-    background-color: #ffffff;
-}
-
-.placing-blocks__item:not(:nth-child(3n + 3)) {
-    margin-right: 22px;
+    /* background-color: #ffffff; */
 }
 
 .placing-item-container {
     display: flex;
     flex-direction: column;
     padding: 0 45px;
+    padding-bottom: 34px;
+    margin-top: -5px;
+    border-radius: 0 0 12px 12px;
+
+    background-color: var(--white-background);
 }
 
 .placing-item-info-container {
@@ -576,13 +590,17 @@ body {
     background-color: var(--button-hovered-background);
 }
 
-.all-places {
+.all-places__content {
     position: relative;
+
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    height: 100%;
+    padding-bottom: 24px;
 
     background: url("/img/Content/All-photo.png") no-repeat;
+    background-size: contain;
 }
 
 .all-places__title {
@@ -720,8 +738,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 68%;
-    padding-top: 64px;
+    /* width: 68%; */
+    padding-top: 120px;
 }
 
 .contact-us__title {
@@ -776,7 +794,7 @@ body {
     background-color: var(--button-hovered-background);
 }
 
-.footer .container {
+.footer-container {
     margin-top: 22px;
     margin-bottom: 52px;
     padding: 46px 52px;
@@ -785,17 +803,11 @@ body {
     background: #333333 url("/img/Decorations/sun-footer.png") no-repeat 80% bottom;
 }
 
-
 .footer-info-container,
 .footer-contact-container,
 .footer-social-container {
     display: flex;
     flex-direction: column;
-}
-
-.footer-info-container {
-    max-width: 340px;
-    width: 100%;
 }
 
 .footer-info-container p {
@@ -808,10 +820,12 @@ body {
 p.footer__copy {
     padding: 0;
     margin-top: -8px;
+    max-width: 88%;
 }
 
 p.footer__description {
     margin-top: 30px;
+    max-width: 74%;
 }
 
 .footer-info-container a {
@@ -827,7 +841,7 @@ p.footer__description {
 }
 
 .footer-contact-container a {
-    width: 44%;
+    width: 32%;
 }
 
 .footer-contact-container p {
@@ -851,8 +865,6 @@ p.footer__description {
 }
 
 .footer-social-container {
-    max-width: 180px;
-    width: 100%;
     align-items: flex-end;
 }
 
